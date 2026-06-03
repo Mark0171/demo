@@ -33,7 +33,7 @@ html, body{
     margin-bottom: .3em;
 }
 .home .img-container{
-    width: auto;
+    width: 90%;
     height: auto;
 }
 .home hr{
