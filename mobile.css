@@ -1,0 +1,186 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+.mobile-only{
+    display: flex;
+}
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+    /* padding-bottom: 1.5em; */
+}
+.home{
+    flex-direction: column-reverse;
+    padding: 1em;
+    height: auto;
+    position: static;
+}
+.home .text-container br{
+    display: none;
+}
+.home .text-container{
+    font-size: 1em;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    height: fit-content;
+    /* border: 2px solid red; */
+}
+.home .text-container h2{
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: .3em;
+}
+.home .img-container{
+    width: auto;
+    height: auto;
+}
+.home hr{
+    width: 100%;
+    transform: none;
+}
+.intro{
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    font-size: .9em;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+.intro .upper{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.intro .upper article{
+    padding: .6em;
+    /* border: 1px solid red; */
+}
+.intro .upper article:first-child{
+    /* border: 1px solid red; */
+    width: 100%;
+
+}
+.intro .upper article:last-child{
+    width: 95%;
+}
+.intro .lower{
+    display: none;
+}
+.skills{
+    height: fit-content;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 80%);
+    gap: 1em;
+    /* color: black; */
+}
+.skills h3{
+    font-size: 2em;
+}
+.skills article{
+    /* border: 1px solid red; */
+    width: 90%;
+}
+.skills ul li{
+    transform: translateX(1em);
+}
+.skills article:last-of-type ul li{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: none;
+}
+
+.projects{
+    gap: 3em;
+}
+.projects h3{
+    font-size: 2em;
+}
+.projects .card-container{
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 1em;
+    justify-content: start;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-marker-group: after;
+}
+.projects .card-container .card{
+    scroll-snap-align: start;
+    width: 90vw;
+}
+
+.projects .card-container::scroll-marker-group{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.projects .card-container .card::scroll-marker{
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    background-color: transparent;
+    border-radius: 50%;
+}
+.projects .card-container .card::scroll-marker:target-current{
+    background-color: orange;
+}
+.projects .card-container::-webkit-scrollbar{
+    display: none;
+}
+.contact{
+    height: fit-content;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    color: hsl(0, 0%, 80%);
+}
+.contact h3{
+    font-size: 2em;
+    text-align: center;
+}
+.contact ul li{
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+footer{
+    position: fixed;
+    height: 3em;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: hsl(0, 0%, 10%);
+    border-radius: 1em 1em 0 0;
+}
+footer nav{
+    width: 100%;
+}
+footer nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+footer nav ul li{
+    list-style: none;
+}
+footer nav ul li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 70%);
+}
