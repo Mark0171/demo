@@ -86,7 +86,7 @@ html, body{
 .skills article:last-of-type ul li{
     list-style: none;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     gap: 1em;
     align-items: center;
     transform: none;
